@@ -1,4 +1,4 @@
-<img src="http://work.scottis.me/wp-content/uploads/2014/01/SRscan1.jpg" />
+<img src="http://work.scottis.me/wp-content/uploads/2014/03/blinkgif.gif" />
 
 pIOIO_blink
 ===========
