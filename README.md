@@ -1,4 +1,4 @@
-<img src="http://work.scottis.me/wp-content/uploads/2014/03/blinkgif.gif" />
+<a href="http://imgur.com/dDBmHAJ"><img src="http://i.imgur.com/dDBmHAJ.gif" title="Hosted by imgur.com" /></a>
 
 pIOIO_blink
 ===========
