@@ -1,4 +1,4 @@
-<a href="http://imgur.com/dDBmHAJ"><img src="http://i.imgur.com/dDBmHAJ.gif" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/dDBmHAJ"><img src="http://i.imgur.com/dDBmHAJ.gif" title="Hosted by imgur.com" width="500" height="279"/></a>
 
 pIOIO_blink
 ===========
