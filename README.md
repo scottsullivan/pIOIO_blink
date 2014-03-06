@@ -1,5 +1,3 @@
-<a href="http://imgur.com/dDBmHAJ"><img src="http://i.imgur.com/dDBmHAJ.gif" title="Hosted by imgur.com" width="500" height="279"/></a>
-
 pIOIO_blink
 ===========
 
@@ -15,11 +13,11 @@ Introductory Android-Processing IOIO example.
 ### Hardware used
   * <a href="https://www.sparkfun.com/products/11343">IOIO-OTG</a> from Sparkfun
   * <a href="https://www.sparkfun.com/products/9434">Bluetooth USB Module Mini</a> from Sparkfun
-  * <a href="https://www.sparkfun.com/products/9594">LED - Basic Yellow 5mm</a> from Sparkfun
+  * <a href="http://www.adafruit.com/products/328">Lithium Ion Polymer Battery - 3.7v 2500mAh</a> from Adafruit
   * <a href="https://www.sparkfun.com/products/12043">Breadboard - Mini Modular (White)</a> from Sparkfun
   * <a href="https://www.sparkfun.com/products/9140">Jumper Wires Premium 6" M/F</a> from Sparkfun
-  * <a href="http://www.adafruit.com/products/328">Lithium Ion Polymer Battery - 3.7v 2500mAh</a> from Adafruit
   * <a href="http://www.amazon.com/Samsung-Nexus-Android-Phone-Sprint/dp/B0050DDVUI">Nexus S 4G</a> by Samsung (any Android phone will do)
+  * <a href="https://www.sparkfun.com/products/9594">LED - Basic Yellow 5mm</a> from Sparkfun
 
 ### LED wiring
   * Connect the shorter lead (negative, cathode) of the LED to ground (GND) on the IOIO board
