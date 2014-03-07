@@ -97,14 +97,17 @@ In the IOIO thread setup we link our `led1` variable to pin #1 on the board and 
 ```
 
 ### Step 7: IOIO thread loop
-Explanation
+The IOIO thread loop mirrors the functionality of the `void draw()` processing funtion, is also basically Java and also only executes if it's connected to the IOIO. The function declaration is also followed by `throws ConnectionLostException` before the opening curly bracket.
+
+6a. The try block checks our `light1On` boolean. If it returns true, the light will turn on.
 ```
-void ioioLoop(IOIO ioio) throws ConnectionLostException {
   try {
     led1.write(light1On);
   }
+```
+6b. The catch block is an exception handler and throws an error if the phone is not connected to the IOIO.
+```
   catch (ConnectionLostException e) {
   }
-}
 ```
 
