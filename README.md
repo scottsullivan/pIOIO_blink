@@ -23,8 +23,6 @@ Introductory Android-Processing IOIO example.
   * Connect the shorter lead (negative, cathode) of the LED to ground (GND) on the IOIO board
   * Connect the longer lead (positive, anode) of the LED to the #1 pin on the IOIO board
 
-## The Code
-
 ### Step 1: Importing Libraries / Android
 First we have to add appropriate IOIO libraries and parts of the Android API, this happens before the setup loop.
 ```
@@ -41,36 +39,46 @@ import android.bluetooth.*;
 
 ### Step 2: Adding global variables
 Also before the setup loop, we name our LED and declare a boolean to control our light and an integer for our color.
+
+2a. Name the LED variable and specify that it's a digital output.
 ```
-DigitalOutput led1;  //naming the led and declaring it to be a digital output
+DigitalOutput led1;
+```
+2b. Make a boolean to control the light.
+```
 boolean light1On = false; //boolean to control the LED
+```
+2c. Create an integer for our background color.
+```
 int bcolor = 0; //variable for the background color of the application
 ```
 
 ### Step 3: Processing setup
-The setup chunk is ran once at the begining of the sketch, here we start the PIOIO communication and declare the size of our sketch as well as choose the orientation of our sketch (You can change it to LANDSCAPE if you'd like).
+The setup chunk is ran once at the begining of the sketch and is in the `void setup()` funtion, here we start the PIOIO communication and declare the size of our sketch as well as choose the orientation of our sketch.
+
+3a. Instantiate pIOIO
 ```
-void setup() {
   new PIOIOManager(this).start(); //begin PIOIO
-  
+```
+3b. Set the size of the Android application, you can specify specific pixel dimensions or have it auto-detect the display width and display height of the device. P3D is the render mode, in case later you need something to be 3D.
+```
   size(displayWidth, displayHeight, P3D); //size of sketch
+```
+3c. Set the orientation of the Android application, here it's portrait but you could also choose `orientation(LANDSCAPE)` or not include this if you don't want to lock the orientation.
+```
   orientation(PORTRAIT); //orientation of sketch
-}
 ```
 
 ### Step 4: Processing draw loop
-The draw loop is run ~60 times per second default, in the draw loop, we're only drawing the background color of our screen.
+The draw loop is run ~60 times per second default and is in the `void draw()` function. In the draw loop, we're only drawing the background color of our screen.
 ```
-void draw() {
   background(bcolor); //background color of sketch
-}
 ```
 
 ### Step 5: The mouse event
-Explanation
+Inside the `void mousePressed()` function we have an if-else statement where if the screen is tapped, it checks if the light is on or off. If it's on, the light will turn off and the background color of the application will go black. If it's off, the light will turn on and the background color will turn white.
 ```
-void mousePressed() {
-  if (light1On == true) {
+  if (light1On) {
     light1On = false;
     bcolor = 0;
   }
@@ -78,15 +86,14 @@ void mousePressed() {
     light1On = true;
     bcolor = 255;
   }
-}
 ```
 
 ### Step 6: IOIO thread setup
-Explanation
+The IOIO functionality resides in a separate paralell thread that is structured similarly to the Processing `void setup()` and `void draw()` functions. The IOIO setup is in the `void ioioSetup(IOIO ioio)` function and is basically Java and only executes if it's connected to the IOIO. The function declaration is followed by `throws ConnectionLostException` before the opening curly bracket.
+
+In the IOIO thread setup we link our `led1` variable to pin #1 on the board and declare that it is to be used for digital output.
 ```
-void ioioSetup(IOIO ioio) throws ConnectionLostException {
   led1 = ioio.openDigitalOutput(1);
-}
 ```
 
 ### Step 7: IOIO thread loop
