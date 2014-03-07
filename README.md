@@ -58,11 +58,11 @@ The setup chunk is ran once at the begining of the sketch and is in the `void se
 
 3a. Instantiate pIOIO
 ```
-  new PIOIOManager(this).start(); //begin PIOIO
+  new PIOIOManager(this).start();
 ```
 3b. Set the size of the Android application, you can specify specific pixel dimensions or have it auto-detect the display width and display height of the device. P3D is the render mode, in case later you need something to be 3D.
 ```
-  size(displayWidth, displayHeight, P3D); //size of sketch
+  size(displayWidth, displayHeight, P3D);
 ```
 3c. Set the orientation of the Android application, here it's portrait but you could also choose `orientation(LANDSCAPE)` or not include this if you don't want to lock the orientation.
 ```
