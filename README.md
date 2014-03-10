@@ -1,7 +1,7 @@
 pIOIO_blink
 ===========
 
-<img src="http://i.imgur.com/vhgT5N9.jpg" />
+<img src="http://imgur.com/l81OXXe.jpg" />
 
 For this project we're going to use <a href="http://processing.org/">Processing</a>, a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board. The IOIO is a microcontroller and has very similar capabilities to an Arduino, except this microcontroller specifically plays nicely with Android devices. In this post, we'll be using the IOIO board for simple digital output, the most basic IOIO capability. We can also use the IOIO for pulse-width-modulated digital output and analog input.
 
