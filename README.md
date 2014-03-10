@@ -3,7 +3,10 @@ pIOIO_blink
 
 <img src="http://i.imgur.com/vhgT5N9.jpg" />
 
-For this project we're going to use Processing a language built on Java to build an Android application that will simply turn on and off a LED using the Android IOIO board.
+For this project we're going to use <a href="http://processing.org/">Processing</a> a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board.
+
+Here's what it will look like (link to Vimeo page):
+<a href="https://vimeo.com/88686061"><img src="http://i.imgur.com/BMr66Ti.jpg" title="Video link" /></a>
 
 ### How to use Processing in Android Mode
    * <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp
