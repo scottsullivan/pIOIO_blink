@@ -3,19 +3,15 @@ pIOIO_blink
 
 <img src="http://i.imgur.com/vhgT5N9.jpg" />
 
-For this project we're going to use <a href="http://processing.org/">Processing</a>, a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board.
+For this project we're going to use <a href="http://processing.org/">Processing</a>, a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board. The IOIO is a microcontroller and has very similar capabilities to an Arduino, except this microcontroller specifically plays nicely with Android devices. In this post, we'll be using the IOIO board for simple digital output, the most basic IOIO capability. We can also use the IOIO for pulse-width-modulated digital output and analog input.
+
+If you're not familiar with using Processing to write Android applications check out this <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp and the<a href="http://wiki.processing.org/w/Android">Android Processing Wiki.</a> We'll specificially be using the <a href="https://github.com/PinkHatSpike/pioio">PIOIO</a> library for Processing by PinkHatSpike.
 
 Here's what it will look like (<a href="https://vimeo.com/88686061">link to Vimeo page</a>):
 <a href="https://vimeo.com/88686061"><img src="http://i.imgur.com/BMr66Ti.jpg" title="Video link" /></a>
 
-### How to use Processing in Android Mode
-   * <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp
-   * <a href="http://wiki.processing.org/w/Android">Android Processing Wiki</a>
-
-### IOIO Processing library
-  * <a href="https://github.com/PinkHatSpike/pioio">PIOIO</a> by PinkHatSpike
-
 ### Hardware used
+Before we dig in to the code, you'll need to pick up this hardware. You can get most of it from <a href="https://www.sparkfun.com/">Sparkfun</a>.
   * <a href="https://www.sparkfun.com/products/11343">IOIO-OTG</a> from Sparkfun
   * <a href="https://www.sparkfun.com/products/9434">Bluetooth USB Module Mini</a> from Sparkfun
   * <a href="http://www.adafruit.com/products/328">Lithium Ion Polymer Battery - 3.7v 2500mAh</a> from Adafruit
@@ -25,6 +21,7 @@ Here's what it will look like (<a href="https://vimeo.com/88686061">link to Vime
   * <a href="https://www.sparkfun.com/products/9594">LED - Basic Yellow 5mm</a> from Sparkfun
 
 ### LED wiring
+The wiring for this project is extremely simple, only two connections are needed!
   * Connect the shorter lead (negative, cathode) of the LED to ground (GND) on the IOIO board
   * Connect the longer lead (positive, anode) of the LED to the #1 pin on the IOIO board
 
@@ -116,5 +113,5 @@ The IOIO thread loop mirrors the functionality of the `void draw()` processing f
   }
 ```
 
-And that's it! This is the most basic interactive building block of using the IOIO board with Processing. This was using the IOIO as a digital output, there are also digital (and analog) inputs.
+And that's it! This is the most basic interactive building block of using the IOIO board with Processing.
 
