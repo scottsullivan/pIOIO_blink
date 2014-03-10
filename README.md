@@ -112,7 +112,7 @@ The IOIO thread loop mirrors the functionality of the `void draw()` processing f
   catch (ConnectionLostException e) {
   }
 ```
-
+### Run on device
 Now you should be good to go. Before you run the application be sure to go to the Android menu in the Processing IDE and select "Sketch Permissions" and check off BLUETOOTH, BLUETOOTH_ADMIN, and INTERNET.
 
 <img src="http://i.imgur.com/5WoRRN9.png" title="sketch permissions" />
