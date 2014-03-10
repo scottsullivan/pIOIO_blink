@@ -1,7 +1,9 @@
 pIOIO_blink
 ===========
 
-Introductory Android-Processing IOIO example.
+<img src="http://i.imgur.com/vhgT5N9.jpg" />
+
+For this project we're going to use Processing a language built on Java to build an Android application that will simply turn on and off a LED using the Android IOIO board.
 
 ### How to use Processing in Android Mode
    * <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp
