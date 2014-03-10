@@ -5,7 +5,7 @@ pIOIO_blink
 
 For this project we're going to use <a href="http://processing.org/">Processing</a> a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board.
 
-Here's what it will look like (link to Vimeo page):
+Here's what it will look like (<a href="https://vimeo.com/88686061">link to Vimeo page</a>):
 <a href="https://vimeo.com/88686061"><img src="http://i.imgur.com/BMr66Ti.jpg" title="Video link" /></a>
 
 ### How to use Processing in Android Mode
@@ -115,4 +115,6 @@ The IOIO thread loop mirrors the functionality of the `void draw()` processing f
   catch (ConnectionLostException e) {
   }
 ```
+
+And that's it! This is the most basic interactive building block of using the IOIO board with Processing. This was using the IOIO as a digital output, there are also digital (and analog) inputs.
 
