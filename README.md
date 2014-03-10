@@ -113,7 +113,8 @@ The IOIO thread loop mirrors the functionality of the `void draw()` processing f
   }
 ```
 
-And you should be ready to go, before you run the application be sure to go to the Android menu in the Processing IDE and select "Sketch Permissions" and check off BLUETOOTH, BLUETOOTH_ADMIN, and INTERNET.
+Now you should be good to go. Before you run the application be sure to go to the Android menu in the Processing IDE and select "Sketch Permissions" and check off BLUETOOTH, BLUETOOTH_ADMIN, and INTERNET.
+
 <img src="http://i.imgur.com/5WoRRN9.png" title="sketch permissions" />
 
 And that's it! Run the sketch and you should now be able to touch anywhere on the screen and the screen color will toggle between being black and white and your LED should be turning on and off at the same time. 
