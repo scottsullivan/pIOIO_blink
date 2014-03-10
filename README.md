@@ -5,7 +5,7 @@ pIOIO_blink
 
 For this project we're going to use <a href="http://processing.org/">Processing</a>, a language built on Java to build an Android application that will simply turn on and off a LED every time you touch the screen using the Android IOIO board. The IOIO is a microcontroller and has very similar capabilities to an Arduino, except this microcontroller specifically plays nicely with Android devices. In this post, we'll be using the IOIO board for simple digital output, the most basic IOIO capability. We can also use the IOIO for pulse-width-modulated digital output and analog input.
 
-If you're not familiar with using Processing to write Android applications check out this <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp and the<a href="http://wiki.processing.org/w/Android">Android Processing Wiki.</a> We'll specificially be using the <a href="https://github.com/PinkHatSpike/pioio">PIOIO</a> library for Processing by PinkHatSpike.
+If you're not familiar with using Processing to write Android applications check out this <a href="http://processing.org/tutorials/android/">Android Processing Tutorial</a> by Jer Thorp and the <a href="http://wiki.processing.org/w/Android">Android Processing Wiki.</a> We'll specificially be using the <a href="https://github.com/PinkHatSpike/pioio">PIOIO</a> library for Processing by PinkHatSpike.
 
 Here's what it will look like (<a href="https://vimeo.com/88686061">link to Vimeo page</a>):
 <a href="https://vimeo.com/88686061"><img src="http://i.imgur.com/BMr66Ti.jpg" title="Video link" /></a>
@@ -113,5 +113,8 @@ The IOIO thread loop mirrors the functionality of the `void draw()` processing f
   }
 ```
 
-And that's it! This is the most basic interactive building block of using the IOIO board with Processing.
+And you should be ready to go, before you run the application be sure to go to the Android menu in the Processing IDE and select "Sketch Permissions" and check off BLUETOOTH, BLUETOOTH_ADMIN, and INTERNET.
+<img src="http://i.imgur.com/5WoRRN9.png" title="sketch permissions" />
+
+And that's it! Run the sketch and you should now be able to touch anywhere on the screen and the screen color will toggle between being black and white and your LED should be turning on and off at the same time. 
 
