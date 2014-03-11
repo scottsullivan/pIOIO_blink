@@ -26,7 +26,7 @@ The wiring for this project is extremely simple, only two connections are needed
   * Connect the longer lead (positive, anode) of the LED to the #1 pin on the IOIO board
 
 ### Step 1: Importing Libraries / Android
-First we have to add appropriate IOIO libraries and parts of the Android API, this happens before the setup loop.
+First we have to add appropriate IOIO libraries and parts of the Android API. Before you can import the PIOIO library to your Processing sketch, you have to download the library from <a href="https://github.com/PinkHatSpike/pioio">here</a> and put it in your libraries folder. After the library is in the libraries folder we bring it in to our project, this happens before the setup loop.
 ```
 import ioio.lib.api.*;
 import ioio.lib.api.exception.*;
