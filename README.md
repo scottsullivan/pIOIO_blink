@@ -119,3 +119,5 @@ Now you should be good to go. Before you run the application be sure to go to th
 
 And that's it! Run the sketch and you should now be able to touch anywhere on the screen and the screen color will toggle between being black and white and your LED should be turning on and off at the same time. 
 
+<a href="http://blog.safaribooksonline.com/"><img src="http://i.imgur.com/Br3caNj.jpg" title="Safari Books Online" /></a>
+
